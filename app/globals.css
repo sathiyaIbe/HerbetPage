@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.main_container{
+  background-color: #FFFDEF;
+
+}
+
+
+
+.section_1{
+  @apply    w-full flex justify-between ;
+ 
+}
+
+.section_1_heading{
+ font-family: 'inter';
+ font-size: 67.31px;
+
+ font-weight: 700;
+ line-height: 84.13px;
+ margin-top: 73px;
+ @apply text-black  ;
+
+}
+
+
+
+.dots{
+  color: #FFB800;
+  font-size: 67.31px;
+}
+
+.icons_container{
+  background-image: url('/assets/logo_border.png');
+  background-repeat: no-repeat;
+  width: 400px;
+}
+
+.header_container{
+  @apply text-black  w-5/6 md:w-4/5 ml-5   ;
+
+}
+
+.logo{
+  max-width: 120px;
+  max-height: 120px; 
+  z-index: 1;
+  float: right;
+  @apply mt-5 mr-5;
+  
+}
+
+.underlint_text{
+text-decoration: none;
+text-underline-position: under;
+text-underline-offset: 1px;
+position: relative;
+}
+.underlint_text:after  {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  background: #FFB800;
+  transition: width 1s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.section_1_heading:hover  .underlint_text:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+ .underlint_text:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+.complete_img{
+  background-color: #FFB800;
+  position: relative;
+  height: 5px !important;
+  
+}
+
+.underlint_text{
+ 
+  position: relative;
+  }
+  .underlint_text:after  {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    background: #FFB800;
+    transition: width 1s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .section_1_heading:hover  .underlint_text:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  
+   .underlint_text:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+
+
+.section_2_image_header{
+  font-family: 'inter';
+ font-size: 18px;
+
+ font-weight: 600;
+ @apply text-black  ;
+ text-transform: uppercase;
+}
+
+
+
+.detail_container_heading{
+  font-size: 26.64px;
+  font-family: 'inter';
+  line-height: 32.24px;
+  font-weight: 700;
+}
+
+.detail_description{
+font-family: "Manrope";
+font-weight: 500;
+font-size: 18.11px;
+line-height: 23.59px;
+color: #444444;
+
+}
+
+.banner_container{
+  background-color: #FFB800;
+  @apply w-full flex border border-black rounded-lg;
+}
+
+.banner_text{
+  font-family: "inter";
+  font-weight: 500;
+  font-size: 40.79px;
+  line-height: 51.9px;
+  color: #000;
+}
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-base  flex items-center justify-center;
+  font-family: "poppins";
+}
+
+.card_text{
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 13.7px;
+  line-height: 22.9px;
+  color: #444444;
+
+}
+
+.card_heading{
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 25.87px;
+  line-height: 31.31px;
+  color: #000;
+}
+
+.plus{
+  color: #000 !important;
+  font-size: 14px;
+  font-weight: bolder !important;
+}
+
+
+.project_title{
+  font-family: 'inter';
+  font-size: 10.58px;
+  font-weight: 400;
+  line-height: 10.68px;
+  color: #000;
+}
+
+.project_date{
+  font-family: 'inter';
+  font-size: 15.73px;
+  font-weight: 700;
+  line-height: 16.51px;
+  color: #000;
+}
+
+.svg_icon :hover{  
+ animation: rotates 2s ease;
+}
+
+@keyframes rotates{
+  from{
+     fill:'black';
+  }
+  to{
+    transform: rotateX('360deg');
+  }
+}
+
+
+#aa :hover{
+  fill: #000;
+}
+
+.timeline_text{
+  font-family: 'Manrope';
+  font-size: 20.02px;
+  font-weight: 500;
+  line-height: 22.37px;
+  color: #444444;
+}
+
+.hr_line{
+  border: solid 2px #000;
+}
+
+.call_container{
+  color: #000;
+  background-color: #FFB800;
+  border: #000 solid 2px;
+  border-radius: 90px;
+  @apply p-11 text-center;
+ 
+}
+
+.call_text{
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 82.37px;
+  line-height: 99.69px;
+  color: #000;
+}
+
+@media screen and (max-width:768px) {
+  .call_text{
+    font-size: 29.11px;
+    line-height: 35.23px;
+  }
+.text_call_bottom{
+  font-size: 19.23px;
+  line-height: 23.27px;
+}
+.section_1_heading{
+  font-size: 25.46px;
+  line-height: 30.6px;
+}
+
+.dots{
+  font-size: 32px;
+}
+.banner_text{
+  font-size: 21.07px;
+  line-height: 30.63px;
+}
+.black_btn{
+  font-size: 7.26px;
+  line-height: 6.54px;
+  font-weight: 400;
+  width: fit-content;
+}
+.underlint_text{
+  text-decoration: underline #FFB800 5px;
+}
+}
+
+.text_call_bottom{
+  font-size: 27.18px;
+  font-family: 'inter';
+  line-height: 32.9px;
+  font-weight: 700;
+}
+
+.hr_line_question{
+  border: solid 1px #000;
+
+}
+
+.question_heading{
+  font-size: 51.43px;
+  font-family: 'inter';
+  line-height: 53px;
+  font-weight: 600;
+}
+
+.question_text{
+  font-size: 20.1px;
+  font-family: 'inter';
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.answer_text{
+  font-size: 20.1px;
+  font-family: 'inter';
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.join_button{
+  font-size: 14.85px;
+  font-family: 'inter';
+  line-height: 17.97px;
+  font-weight: 500;
+  background-color: transparent;
+  border: #000 1px solid ;
+  border-radius: 40px;
+}
+
+.footer_section{
+  background-color: #FFB800;
+}
+
+.address_title{
+  font-size: 15.05px;
+  font-family: 'inter';
+  line-height: 22.57px;
+  font-weight: 700;
+  color: #000;
+}
+
+.address_text{
+  font-size: 15.05px;
+  font-family: 'inter';
+  line-height: 22.57px;
+  font-weight: 400;
+  color: #000;
+}
+
+.svg_icons:hover
+  path{
+
+  
+  fill: white;
+  }
+  
+  .svg_icons:hover
+  circle{
+    opacity: 1;
+  fill: #000;
+  }
+
+  .svg_icons{
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .input_container{
+    border-radius: 44px;
+  }
+
+  .email_input{
+    font-size: 15.05px;
+  font-family: 'inter';
+  line-height: 22.57px;
+  font-weight: 400;
+  color: #000;
+  outline: none;
+  }
+
+  .logo_footer{
+    max-width: 120px;
+    max-height: 120px; 
+  
+  }
+
+  .signin_text{
+    font-size: 20px;
+    font-family: 'inter';
+    line-height: 30px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .date_text{
+    color: #000;
+    font-size: 8.33px;
+    font-family: 'inter';
+    line-height: 14.75px;
+    font-weight: 600;
+  }
+
+  .case_text{
+    color: #000;
+    font-size: 15.77px;
+    font-family: 'inter';
+    line-height: 14.75px;
+    font-weight: 600;
+  }
+
+  
+  .giant_text{
+    color: #000;
+    font-size: 31.19px;
+    font-family: 'inter';
+    line-height: 37.75px;
+    font-weight: 700;
+  }
+
+  .case_container{
+    background-color: #FFB800;
+    @apply p-4 ml-5;
+    border-radius: 15px;
+    width: 374.77px;
+    height: 129.59px;
+  }
+  .case_containers{
+    background-color: #FFB800;
+    @apply p-4 ;
+    border-radius: 15px;
+   
+    height: 129.59px;
+  }
+
+  .section2_img_container{
+ 
+    position:relative;
+  }
+.case_main{
+  margin-top: 50%;
+
+    background-image: linear-gradient(transparent, black, black, black);
+  border-radius: 17px;
+}
+
+.logoss{
+  position: relative;
+  transition: .5s;
+  transform-style: preserve-3d;
+  height: 150px;
+  transform: perspective(400px);
+}
